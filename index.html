@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="CSS/main.css">
+	<link rel="stylesheet" href="CSS/jquery-ui.css">
+	<title>Audio Player</title>
+</head>
+
+<body>
+	<section class="drop-shadow lifted">
+		<article id="player1">
+			<audio preload="auto" autobuffer id="audio">
+				<source src="Escala-Palladio.mp3" type="audio/mp3" />
+				<source src="Escala-Palladio.ogg" type="audio/ogg" />
+				Votre fureteur ne supporte pas les objects audio.
+			</audio>﻿
+			<div class="audiocontrols">
+				<div id="left"></div>				
+				<div id="play"></div>
+				<div id="stop"></div>
+				<div id="right"></div>			
+			</div>			
+		</article>
+		<article id="information">
+			<div id="player">
+				<header>
+					<p id="musicName"></p>
+					<p id="time"></p>
+				</header>
+				<footer id="loading">
+					<div id="progress"></div>
+				</footer>			
+			</div>
+			<div id="volume">				
+				<div id="slider-container">
+					<div id="bouton"></div>
+					<div id="slider"></div>				
+				</div>
+				<div id="icon-volume"></div>
+			</div>
+		</article>
+	</section>
+
+	<script src="Js/jquery-1.9.1.min.js"></script>
+	<script src="Js/jquery-migrate-1.1.1.min.js"></script>
+	<script src="Js/jquery-ui.js"></script>
+	<script src="Js/audio.min.js"></script>
+</body>
+</html>
